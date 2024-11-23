@@ -1,0 +1,87 @@
+Experiment 1:
+
+Macro-Averaged Metrics:
+Precision: 0.7628, Recall: 0.3362, F1-Score: 0.4345
+
+Micro-Averaged Metrics:
+Precision: 0.6557, Recall: 0.2694, F1-Score: 0.3819
+
+total_fn:  377
+
+total_fp:  73
+
+total_tp:  139
+
+======================================================================================================
+
+Experiment 2:
+
+Macro-Averaged Metrics:
+Precision: 0.0048, Recall: 0.0118, F1-Score: 0.0067
+
+Micro-Averaged Metrics:
+Precision: 0.0054, Recall: 0.0098, F1-Score: 0.0069
+
+total_fn:  507
+
+total_fp:  927
+
+total_tp:  5
+
+
+
+======================================================================================================
+
+Experiment 3 with PyTy1 dataset:
+
+Macro-Averaged Metrics:
+Precision: 0.0625, Recall: 0.0156, F1-Score: 0.0250
+
+Micro-Averaged Metrics:
+Precision: 0.0476, Recall: 0.0172, F1-Score: 0.0253
+
+total_fn:  57
+
+total_fp:  20
+
+total_tp:  1
+
+
+
+======================================================================================================
+
+Experiment 3 with PyTy2 dataset:
+
+Macro-Averaged Metrics:
+Precision: 0.2000, Recall: 0.0833, F1-Score: 0.1167
+
+Micro-Averaged Metrics:
+Precision: 0.1176, Recall: 0.0625, F1-Score: 0.0816
+
+total_fn:  30
+
+total_fp:  15
+
+total_tp:  2
+
+======================================================================================================
+
+Experiment 3 with siddiq dataset:
+
+Macro-Averaged Metrics:
+Precision: 0.0423, Recall: 0.0154, F1-Score: 0.0219
+
+Micro-Averaged Metrics:
+Precision: 0.0519, Recall: 0.0163, F1-Score: 0.0248
+
+total_fn:  422
+
+total_fp:  128
+
+total_tp:  7
+
+======================================================================================================
+
+Experiment 4:
+
+

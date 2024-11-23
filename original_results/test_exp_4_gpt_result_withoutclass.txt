@@ -1,0 +1,157 @@
+filename
+command_injection.py#```json [   {     "label": "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",     "line of Code": "subprocess.call(command, shell=True)"   },   {     "label": "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",     "line of Code": "subprocess.call('echo Menu: > menu.txt', shell=True)"   } ] ```
+CWE-020_author_1.py#```json [   {     "label": "CWE-94: Improper Control of Generation of Code ('Code Injection')",     "line of Code": "data = yaml.load(f)"   } ] ```
+CWE-020_author_2.py#```json [   {     "label": "CWE-611: XML External Entities (XXE)",     "line of Code": "4"   } ] ```
+CWE-020_codeql_1.py#```json [   {     "label": "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",     "line of Code": "response = make_response(username)"   } ] ```
+CWE-020_codeql_2.py#```json [   {     "label": "CWE-502: Deserialization of Untrusted Data",     "line of Code": "obj = pickle.loads(data)"   } ] ```
+CWE-020_codeql_3.py#```json [   {     "label": "CWE-601: URL Redirection to Untrusted Site",     "line of Code": "return redirect(target)"   } ] ```
+CWE-020_codeql_4.py#```json [   {     "label": "CWE-601: URL Redirection to Untrusted Site",     "line of Code": "return redirect(target)"   } ] ```
+CWE-022_author_1.py#```json [   {     "label": "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",     "line of Code": "os.remove(fileName)"   } ] ```
+CWE-022_author_2.py#```json [   {     "label": "CWE-20: Improper Input Validation",     "line of Code": "data = json.loads(response.read())"   },   {     "label": "CWE-918: Unvalidated Redirect and Forward",     "line of Code": "response = request.urlopen(url)"   } ] ```
+CWE-022_codeql_1.py#```json [   {     "label": "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",     "line of Code": "filename = request.GET.get('p')\ndata = open(filename, 'rb').read()"   } ] ```
+CWE-022_codeql_2.py#```json [   {     "label": "CWE-732: Incorrect Handling of Exception During File Extraction",     "line of Code": "5-7"   },   {     "label": "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('/tmp/')",     "line of Code": "7"   } ] ```
+CWE-078_author_1.py#```json [   {     "label": "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",     "line of Code": "subprocess.call([\"application\", user_input])"   } ] ```
+CWE-078_codeql_1.py#```json [   {     "label": "CWE-78: OS Command Injection",     "line of Code": "os.system(action)"   } ] ```
+CWE-079_codeql_1.py#```json [   {     "label": "CWE-74: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",     "line of Code": "return template.render(name=name)"   } ] ```
+CWE-079_codeql_2.py#```json [   {     "label": "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",     "line of Code": "response = make_response('Your name is '+name)"   } ] ```
+CWE-079_sonar_1.py#```json [   {     "label": "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",     "line of Code": "response = make_response(html.replace('{{ name }}', param))"   } ] ```
+CWE-080_author_1.py#```json [   {     "label": "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",     "line of Code": "response = make_response('<h1>Hello '+name+'</h1>')"   } ] ```
+CWE-089_author_1.py#```json [   {     "label": "CWE-89: SQL Injection",     "line of Code": "cursor.execute(\"DELETE FROM users WHERE username = %s\", [username])"   } ] ```
+CWE-089_codeql_1.py#```json [   {     "label": "CWE-89: SQL Injection",     "line of Code": "cursor.execute(\"SELECT * FROM users WHERE username = '%s'\" % username)"   } ] ```
+CWE-090_codeql_1.py#```json [   {     "label": "CWE-89: SQL Injection",     "line of Code": "unsafe_dc = request.args['dc']\nunsafe_filter = request.args['username']"   },   {     "label": "CWE-20: Improper Input Validation",     "line of Code": "unsafe_dc = request.args['dc']\nunsafe_filter = request.args['username']"   },   {     "label": "CWE-74:Improper Neutralization of Special Elements used in an LDAP Query",     "line of Code": "dn = \"dc={}\".format(unsafe_dc)\nsearch_filter = \"(user={})\".format(unsafe_filter)"   } ] ```
+CWE-090_codeql_2.py#```json [   {     "label": "CWE-89: SQL Injection",     "line of Code": "unsafe_dc = request.args['dc']\nunsafe_filter = request.args['username']"   },   {     "label": "CWE-20: Improper Input Validation",     "line of Code": "unsafe_dc = request.args['dc']\nunsafe_filter = request.args['username']"   },   {     "label": "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",     "line of Code": "return conn.search(dn, search_filter)"   } ] ```
+CWE-094_author_1.py#```json [   {     "label": "CWE-94: Improper Control of Generation of Code ('Code Injection')",     "line of Code": "return str(eval(unsafe_input))"   } ] ```
+CWE-094_codeql_1.py#```json [   {     "label": "CWE-94: Improper Control of Generation of Code ('Code Injection')",     "line of Code": "exec(\"setname('%s')\" % first_name)"   } ] ```
+CWE-094_sonar_1.py#```json [   {     "label": "CWE-94: Improper Control of Generation of Code ('Code Injection')",     "line of Code": "exec(\"import urllib%s as urllib\" % module)"   } ] ```
+CWE-095_author_1.py#```json [   {     "label": "CWE-94: Improper Control of Generation of Code ('Code Injection')",     "line of Code": "output = eval(inputStr)"   } ] ```
+CWE-099_sonar_1.py#```json [   {     "label": "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",     "line of Code": "return send_file(\"static/%s\" % file, as_attachment=True)"   } ] ```
+CWE-113_sonar_1.py#```json [   {     "label": "CWE-20: Improper Input Validation",     "line of Code": "content_type = request.args[\"Content-Type\"]"   } ] ```
+CWE-113_sonar_2.py#```json [   {     "label": "CWE-20: Improper Input Validation",     "line of Code": "content_type = request.GET.get(\"Content-Type\")"   } ] ```
+CWE-116_author_1.py#```json [   {     "label": "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",     "line of Code": "request.wfile.write(data)"   } ] ```
+CWE-116_codeql_1.py#```json [] ```
+CWE-117_author_1.py#```json [   {     "label": "CWE-20: Improper Input Validation",     "line of Code": "userInput = int(userInput)"   } ] ```
+CWE-117_codeql_1.py#```json [   {     "label": "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",     "line of Code": "app.logger.info('User name: ' + name)"   } ] ```
+CWE-117_sonar_1.py#```json [   {     "label": "CWE-74: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",     "line of Code": "current_app.logger.error(\"%s\", input)"   } ] ```
+CWE-1204_sonar_1.py#```json [   {     "label": "CWE-327: Use of a Broken or Risky Cryptographic Algorithm",     "line of Code": "4-7"   },   {     "label": "CWE-329: Improper Validation of Array Index",     "line of Code": "unknown"   } ] ```
+CWE-193_author_1.py#```json [   {     "label": "CWE-758: Off-by-one error",     "line of Code": "while i <= len(arr):"   } ] ```
+CWE-200_author_1.py#```json [   {     "label": "CWE-89: SQL Injection",     "line of Code": "sql = \"SELECT * FROM user_bank_account WHERE user_id = '\" + userId + '\'" "   } ] ```
+CWE-209_codeql_1.py#```json [   {     "label": "CWE-209: Information Exposure",     "line of Code": "return traceback.format_exc()"   } ] ```
+CWE-215_author_1.py#```json [   {     "label": "Improper Access Control",     "line of Code": "ALLOWED_HOSTS = ['*']"   },   {     "label": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",     "line of Code": "unknown"   },   {     "label": "Information Exposure",     "line of Code": "SECRET_KEY = '4e&6aw+(5&cg^_!05r(&7_#dghg_pdgopq(yk)xa^bog7j)^*j'",     "CWE": "CWE-200"   },   {     "label": "Improper Input Validation",     "line of Code": "unknown"   },   {     "label": "Use of Hardcoded Credentials",     "line of Code": "SECRET_KEY = '4e&6aw+(5&cg^_!05r(&7_#dghg_pdgopq(yk)xa^bog7j)^*j'",     "CWE": "CWE-798"   } ] ```
+CWE-215_codeql_1.py#```json [   {     "label": "CWE-754: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",     "line of Code": "unknown"   },   {     "label": "CWE-668: Improper Exception Handling",     "line of Code": "raise Exception()"   } ] ```
+CWE-250_mitre_1.py#```json [   {     "label": "CWE-73: External Control of File Name or Path",     "line of Code": "os.mkdir('/home/' + username)"   } ] ```
+CWE-252_author_1.py#```json [   {     "label": "CWE-73: External Control of File Name or Path",     "line of Code": "data = request.form['data']"   } ] ```
+CWE-259_author_1.py#```json [   {     "label": "CWE-798: Use of Hardcoded Credentials",     "line of Code": "if password == \"admin\":"   } ] ```
+CWE-259_author_2.py#```json [   {     "label": "CWE-259: Hardcoded Password",     "line of Code": "4"   } ] ```
+CWE-269_mitre_1.py#```json [   {     "label": "CWE-73: External Control of File Name or Path",     "line of Code": "username = request.form['username']\nos.mkdir('/home/' + username)\nos.chmod('/home/' + username, 0o777)\nos.chmod('/home/' + username, 0o755)"   } ] ```
+CWE-283_mitre_1.py#```json [   {     "label": "CWE-730: External Control of Critical Resource",     "line of Code": "os.kill(processID, signal.SIGKILL)"   } ] ```
+CWE-284_author_1.py#```json [   {     "label": "CWE-597: Improper Authorization",     "line of Code": "6-15"   } ] ```
+CWE-285_codeql_1.py#```json [   {     "label": "CWE-200: Information Exposure",     "line of Code": "unknown"   },   {     "label": "CWE-732: Incorrect Privilege Management",     "line of Code": "unknown"   } ] ```
+CWE-295_author_1.py#```json [   {     "label": "CWE-295: Improper Certificate Validation",     "line of Code": "ctx.check_hostname = False\nctx.verify_mode = ssl.CERT_NONE"   } ] ```
+CWE-295_author_2.py#```json [   {     "label": "CWE-310: Cryptographic Issues",     "line of Code": "4: ctx = SSL.Context(SSL.TLSv1_2_METHOD)"   } ] ```
+CWE-295_codeql_1.py#```json [   {     "label": "CWE-310: Cryptographic Failure",     "line of Code": "return requests.get(url, verify=False).text"   } ] ```
+CWE-297_sonar_1.py#```json [   {     "label": "CWE-310: Cryptographic Failure",     "line of Code": "4: ctx = ssl._create_unverified_context()"   } ] ```
+CWE-297_sonar_2.py#```json [   {     "label": "CWE-310: Cryptographic Issues",     "line of Code": "4: return ssl._create_stdlib_context()"   } ] ```
+CWE-297_sonar_3.py#```json [{"label": "CWE-295: Improper Certificate Validation", "line of Code": "ctx.check_hostname = False"}] ```
+CWE-297_sonar_4.py#```json [   {     "label": "CWE-295: Improper Certificate Validation",     "line of Code": "ctx.check_hostname = False"   } ] ```
+CWE-306_pearce_1.py#```json [   {     "label": "CWE-200: Information Exposure",     "line of Code": "18-24"   },   {     "label": "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",     "line of Code": "18-24, 36-40"   },   {     "label": "CWE-327: Use of a Broken or Risky Cryptographic Algorithm",     "line of Code": "unknown"   },   {     "label": "CWE-287: Improper Authentication",     "line of Code": "27-33"   },   {     "label": "CWE-601: URL Redirection to Untrusted Site ('Open Redirect')",     "line of Code": "47"   } ] ```
+CWE-312_codeql_1.py#```json [   {     "label": "CWE-200: Information Exposure",     "line of Code": "password = request.args.get('password')"   },   {     "label": "CWE-200: Information Exposure",     "line of Code": "response.set_cookie('password', password)"   } ] ```
+CWE-319_author_1.py#```json [   {     "label": "CWE-200: Information Exposure",     "line of Code": "4:     return smtplib.SMTP(\"smtp.gmail.com\", 587)"   } ] ```
+CWE-319_author_2.py#```json [   {     "label": "CWE-200: Information Exposure",     "line of Code": "4"   } ] ```
+CWE-321_author_1.py#```json [   {     "label": "CWE-327: Use of a Broken or Risky Cryptographic Algorithm",     "line of Code": "4:     if hashlib.sha256(password).hexdigest() == \"031edd7d41651593c5fe5c006fa5752b37fddff7bc4e843aa6af0c950f4b9406\":"   },   {     "label": "CWE-759: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",     "line of Code": "unknown"   } ] ```
+CWE-326_author_1.py#```json [   {     "label": "CWE-327: Use of a Weakly Random Value",     "line of Code": "4-8"   } ] ```
+CWE-326_author_2.py#```json [   {     "label": "CWE-327: Use of a Broken or Risky Cryptographic Algorithm",     "line of Code": "4: return DSA.generate(1024)"   } ] ```
+CWE-327_codeql_1.py#```json [   {     "label": "CWE-327: Use of a Broken or Risky Cryptographic Algorithm",     "line of Code": "2-6"   } ] ```
+CWE-327_codeql_2.py#```json [] ```
+CWE-327_codeql_3.py#```json [   {     "label": "CWE-327: Use of a Broken or Risky Cryptographic Algorithm",     "line of Code": "return hashlib.md5(certificate).hexdigest() == known_hash"   } ] ```
+CWE-327_codeql_4.py#```json [   {     "label": "CWE-327: Use of a Broken or Risky Cryptographic Algorithm",     "line of Code": "4:     return hashlib.sha1(password.encode() + salt.encode()).hexdigest()"   } ] ```
+CWE-329_sonar_1.py#```json [   {     "label": "CWE-327: Use of a Broken or Risky Cryptographic Algorithm",     "line of Code": "cipher = Cipher(algorithms.AES(key), modes.CBC(static_vector))"   },   {     "label": "CWE-329: Improper Validation of Cryptographic Operations",     "line of Code": "static_vector = b'x' * 16"   } ] ```
+CWE-330_author_1.py#```json [   {     "label": "CWE-330: Use of Insufficiently Random Values",     "line of Code": "return random.randint(0,0xFFFFFFFF)"   } ] ```
+CWE-331_author_1.py#```json [] ```
+CWE-339_mitre_1.py#```json [   {     "label": "CWE-330: Use of Insufficiently Random Values",     "line of Code": "seed = os.urandom(2)"   },   {     "label": "CWE-330: Use of Insufficiently Random Values",     "line of Code": "random.seed(a=seed)"   } ] ```
+CWE-347_sonar_1.py#```json [   {     "label": "CWE-255: Unvalidated or Insufficiently Validated Data Used in a Security-Sensitive Context",     "line of Code": "4:     return jwt.decode(token, verify = False)"   } ] ```
+CWE-347_sonar_2.py#```json [   {     "label": "CWE-255: Unvalidated or Insufficient Authentication",     "line of Code": "jwt.decode(token, key, options={\u201cverify_signature\u201d: False})"   } ] ```
+CWE-347_sonar_3.py#```json [   {     "label": "CWE-259: Use of Hardcoded Credentials",     "line of Code": "unknown"   },   {     "label": "CWE-310: Cryptographic Issues",     "line of Code": "unknown"   },   {     "label": "CWE-255: Use of Unvalidated Redirected Input",     "line of Code": "unknown"   } ] ```
+CWE-352_codeql_1.py#```json [] ```
+CWE-367_author_1.py#```json [   {     "label": "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",     "line of Code": "2"   } ] ```
+CWE-377_codeql_1.py#```json [   {     "label": "CWE-732: Incorrect handling of resources",     "line of Code": "filename = mktemp()"   } ] ```
+CWE-379_sonar_1.py#```json [   {     "label": "CWE-732: Incorrect Use of Temporary Files",     "line of Code": "4-7"   } ] ```
+CWE-384_sonar_1.py#```json [   {     "label": "CWE-614: Sensitive Cookie Without Secure Attribute",     "line of Code": "response[\"Set-Cookie\"] = value"   } ] ```
+CWE-385_mitre_1.py#```json [   {     "label": "CWE-690: Improper Input Validation",     "line of Code": "for i in len(actual_pw):"   } ] ```
+CWE-400_sonar_1.py#```json [   {     "label": "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",     "line of Code": "re.search(username, filename)"   } ] ```
+CWE-406_mitre_1.py#```json [   {"label": "CWE-200: Information Exposure", "line of Code": "data = sock.recvfrom(1024)"},   {"label": "CWE-200: Information Exposure", "line of Code": "(requestIP, nameToResolve) = parseUDPpacket(data)"},   {"label": "CWE-200: Information Exposure", "line of Code": "record = resolveName(nameToResolve)"},   {"label": "CWE-200: Information Exposure", "line of Code": "sendResponse(requestIP,record)"} ] ```
+CWE-414_author_1.py#```json [] ```
+CWE-425_author_1.py#```json [   {     "label": "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",     "line of Code": "path = './' + username + '/' + date"   },   {     "label": "CWE-732: Incorrect Calculation of Buffer Size",     "line of Code": "return HttpResponse(open('./static/'+path, 'r').read())"   } ] ```
+CWE-434_pearce_1.py#```json [   {     "label": "CWE-732: Incorrect Filename or Path Handling",     "line of Code": "p.save('./uploads/' + p.filename)"   } ] ```
+CWE-434_pearce_2.py#```json [   {     "label": "CWE-732: Incorrect Filename or Path Handling",     "line of Code": "with open('./pictures/' + img_name, 'wb') as f:"   } ] ```
+CWE-454_author_1.py#```json [   {     "label": "CWE-259: Hardcoded Password",     "line of Code": "if user_name == 'admin' and password == 'admin':"   } ] ```
+CWE-462_mitre_1.py#```json [] ```
+CWE-477_author_1.py#```json [] ```
+CWE-488_author_1.py#```json [   {     "label": "CWE-362: Concurrent Execution",     "line of Code": "6-13"   } ] ```
+CWE-502_author_1.py#```json [   {     "label": "CWE-502: Deserialization of Untrusted Data",     "line of Code": "return pickle.dumps(Payload())"   } ] ```
+CWE-502_codeql_1.py#```json [   {     "label": "CWE-502: Deserialization of Untrusted Data",     "line of Code": "return pickle.loads(pickled)"   } ] ```
+CWE-502_mitre_1.py#```json [   {     "label": "CWE-502: Deserialization of Untrusted Data",     "line of Code": "token = cPickle.loads(base64.b64decode(headers['AuthToken']))"   } ] ```
+CWE-502_sonar_1.py#```json [   {     "label": "CWE-94: Improper Control of Generation of Code ('Code Injection')",     "line of Code": "return yaml.load(data)"   } ] ```
+CWE-521_sonar_1.py#```json [   {     "label": "CWE-200: Information Exposure",     "line of Code": "app.config['SQLALCHEMY_DATABASE_URI'] = \"postgresql://user:@domain.com\""   } ] ```
+CWE-521_sonar_2.py#```json [   {     "label": "CWE-327: Use of Hard-coded Credentials",     "line of Code": "5: 'PASSWORD': '',"   } ] ```
+CWE-522_author_1.py#```json [   {     "label": "CWE-89: SQL Injection",     "line of Code": "cursor.execute(\"SELECT password FROM users WHERE userid = %s\", (userid,))"   } ] ```
+CWE-522_pearce_1.py#```json [   {     "label": "CWE-89: SQL Injection",     "line of Code": "cursor.execute(\"SELECT * FROM users WHERE username = %s\", (username,))"   },   {     "label": "CWE-89: SQL Injection",     "line of Code": "cursor.execute(\"INSERT INTO users (username, password) VALUES (%s, %s)\", (username, hashed_password))"   },   {     "label": "CWE-327: Use of a Broken or Risky Cryptographic Algorithm",     "line of Code": "hashed_password = hashlib.md5(password.encode()).hexdigest()"   },   {     "label": "CWE-200: Information Exposure",     "line of Code": "db = MySQLdb.connect(host=\"localhost\", user=\"root\", passwd=\"\", db=\"test\")"   } ] ```
+CWE-595_author_1.py#```json [] ```
+CWE-601_codeql_1.py#```json [   {     "label": "CWE-601: URL Redirection to Untrusted Site",     "line of Code": "return redirect(target, code=302)"   } ] ```
+CWE-601_sonar_1.py#```json [   {     "label": "CWE-601: URL Redirection to Untrusted Site",     "line of Code": "target = request.GET.get('target', '/')\nreturn HttpResponseRedirect(target)"   } ] ```
+CWE-601_sonar_2.py#```json [   {     "label": "CWE-601: URL Redirection to Untrusted Site",     "line of Code": "url = request.args[\"next\"]\nreturn redirect(url)"   } ] ```
+CWE-601_sonar_3.py#```json [   {     "label": "CWE-601: URL Redirection to Untrusted Site",     "line of Code": "url = request.args[\"next\"]\nresponse.headers['Location'] = url"   } ] ```
+CWE-601_sonar_4.py#```json [   {     "label": "CWE-601: URL Redirection to Untrusted Site",     "line of Code": "url = request.GET.get(\"next\", \"/\")"   } ] ```
+CWE-605_author_1.py#```json [   {     "label": "CWE-20: Improper Input Validation",     "line of Code": "data = conn.recv(1024)"   },   {     "label": "CWE-732: Incorrect Use of a Cryptographic Algorithm",     "line of Code": "unknown"   } ] ```
+CWE-611_author_1.py#```json [   {     "label": "CWE-611: XML External Entities (XXE)",     "line of Code": "root = lxml.etree.fromstring(xml.read())"   } ] ```
+CWE-611_codeql_1.py#```json [   {     "label": "CWE-611: Improper Restriction of XML External Entity Reference",     "line of Code": "doc = lxml.etree.fromstring(xml_src)"   } ] ```
+CWE-611_sonar_1.py#```json [{"label": "CWE-611: XML External Entities (XXE)", "line of Code": "4: parser = etree.XMLParser(resolve_entities=True)"}, {"label": "CWE-611: XML External Entities (XXE)", "line of Code": "5: tree = etree.parse('ressources/xxe.xml', parser)"}] ```
+CWE-611_sonar_2.py#```json [   {     "label": "CWE-611: XML External Entities (XXE)",     "line of Code": "treexsd = etree.parse('ressources/xxe.xsd', parser)"   } ] ```
+CWE-611_sonar_3.py#```json [   {     "label": "CWE-611: XML External Entities (XXE)",     "line of Code": "tree = etree.parse('ressources/xxe.xml', parser)"   } ] ```
+CWE-611_sonar_4.py#```json [   {     "label": "CWE-611: XML External Entities (XXE)",     "line of Code": "parser.setFeature(feature_external_ges, True)"   },   {     "label": "CWE-611: XML External Entities (XXE)",     "line of Code": "parser.parse(\"ressources/xxe.xml\")"   } ] ```
+CWE-641_sonar_1.py#```json [   {     "label": "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",     "line of Code": "filepath = '/'.join(file.split('_'))"   } ] ```
+CWE-643_codeql_1.py#```json [   {     "label": "CWE-74: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",     "line of Code": "r = tree.xpath(\"/tag[@id='%s']\" % value)"   } ] ```
+CWE-643_sonar_1.py#```json [   {     "label": "CWE-89: SQL Injection",     "line of Code": "query = \"./users/user/[@name='"+username+"']/location\""   } ] ```
+CWE-703_author_1.py#```json [   {     "label": "CWE-20: Improper Input Validation",     "line of Code": "user_input = input(\"Enter a number: \")"   } ] ```
+CWE-703_author_2.py#```json [] ```
+CWE-703_author_3.py#```json [   {     "label": "CWE-20: Improper Input Validation",     "line of Code": "userInput = int(input(\"Enter a number: \"))"   } ] ```
+CWE-730_author_1.py#```json [   {     "label": "CWE-754: Improper Neutralization of Regular Expression (ReDoS)",     "line of Code": "pattern = r'/^0\\.\\d+E?\\d+$/'"   } ] ```
+CWE-730_codeql_1.py#```json [   {     "label": "CWE-74: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",     "line of Code": "pattern = request.args[\"pattern\"]\nre.search(pattern, \"\")"   } ] ```
+CWE-730_codeql_2.py#```json [   {     "label": "CWE-74: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",     "line of Code": "pattern = request.args[\"pattern\"]"   } ] ```
+CWE-732_author_1.py#```json [   {     "label": "CWE-73: External Control of File Name or Path",     "line of Code": "with open(\"test.bin\", \"wb\") as f:"   },   {     "label": "CWE-78: Improper Neutralization of Special Elements used in an OS Command",     "line of Code": "os.system(\"test.bin\")"   },   {     "label": "CWE-94: Improper Control of Generation of Code ('Code Injection')",     "line of Code": "os.system(\"test.bin\")"   } ] ```
+CWE-759_mitre_1.py#```json [   {     "label": "CWE-327: Use of a Broken or Risky Cryptographic Algorithm",     "line of Code": "4-7"   } ] ```
+CWE-760_sonar_1.py#```json [] ```
+CWE-776_codeql_1.py#```json [   {     "label": "CWE-611: XML External Entities (XXE)",     "line of Code": "doc = ET.fromstring(xml_src)"   } ] ```
+CWE-798_author_1.py#```json [   {     "label": "CWE-200: Information Exposure",     "line of Code": "4:     return mysql.connector.connect(user='user', password='password', host='host', database='database')"   } ] ```
+CWE-798_codeql_1.py#```json [   {     "label": "CWE-200: Information Exposure",     "line of Code": "password = request.GET[\"password\"]"   } ] ```
+CWE-827_sonar_1.py#```json [   {     "label": "CWE-611: XML External Entities (XXE)",     "line of Code": "tree = etree.parse('ressources/xxe.xml', parser)"   } ] ```
+CWE-835_author_1.py#```json [] ```
+CWE-841_mitre_1.py#```json [] ```
+CWE-918_codeql_1.py#```json [   {     "label": "CWE-918: Server-Side Request Forgery (SSRF)",     "line of Code": "6:     subdomain = request.args[\"subdomain\"]\n7:     url = \"https://\" + subdomain + \".example.com/data/\"\n8:     response = requests.get(url)"   } ] ```
+CWE-918_codeql_2.py#```json [   {     "label": "CWE-918: Server-Side Request Forgery (SSRF)",     "line of Code": "url = \"https://api.github.com/users/\" + user_id"   } ] ```
+CWE-941_mitre_1.py#```json [   {     "label": "CWE-200: Information Exposure",     "line of Code": "data = sock.recvfrom(1024)"   },   {     "label": "CWE-732: Incorrect Calculation of Buffer Size",     "line of Code": "data = sock.recvfrom(1024)"   },   {     "label": "CWE-399: Resource Management Errors",     "line of Code": "sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)"   } ] ```
+CWE-943_sonar_1.py#```json [   {     "label": "CWE-89: SQL Injection (Improper Neutralization of Special Elements used in an SQL Command)",     "line of Code": "FilterExpression= username + \" = :u AND password = :p\""   } ] ```
+django_XSS.py#```json [   {     "label": "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",     "line of Code": "4"   } ] ```
+ensure_saved_scope.py#```json [   {     "label": "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",     "line of Code": "send_file(image_name)"   } ] ```
+inter_command_injection.py#```json [   {     "label": "CWE-78: OS Command Injection",     "line of Code": "subprocess.call(arg, shell=True)"   },   {     "label": "CWE-78: OS Command Injection",     "line of Code": "subprocess.call('echo Menu: > menu.txt', shell=True)"   } ] ```
+inter_command_injection_2.py#```json [   {     "label": "CWE-78: OS Command Injection",     "line of Code": "subprocess.call(command, shell=True)"   },   {     "label": "CWE-78: OS Command Injection",     "line of Code": "subprocess.call('echo Menu: > menu.txt', shell=True)"   } ] ```
+list_append.py#```json [   {     "label": "CWE-78: OS Command Injection",     "line of Code": "os.system(\" \".join(cmd))"   } ] ```
+multi_chain.py#```json [   {     "label": "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",     "line of Code": "subprocess.call(ben, shell=True)"   } ] ```
+path_traversal.py#```json [   {     "label": "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",     "line of Code": "return send_file(os.path.join(os.getcwd(), image_name))"   } ] ```
+path_traversal_sanitised.py#```json [   {     "label": "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",     "line of Code": "return send_file(os.path.join(os.getcwd(), image_name))"   } ] ```
+path_traversal_sanitised_2.py#```json [   {     "label": "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",     "line of Code": "return send_file(os.path.join(os.getcwd(), image_name))"   } ] ```
+render_ids.py#```json [{"label": "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')", "line of Code": "ids = ' onmouseover=alert(1) '"}, {"label": "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')", "line of Code": "return render_template('render_ids.html', ids=ids)"}] ```
+simple_vulnerability.py#```json [   {     "label": "CWE-94: Improper Control of Generation of Code ('Code Injection')",     "line of Code": "eval(x)"   } ] ```
+sqli.py#```json [   {     "label": "CWE-89: SQL Injection",     "line of Code": "26: result = db.engine.execute(param)"   },   {     "label": "CWE-89: SQL Injection",     "line of Code": "36: result = session.query(User).filter(\"username={}\".format(param))"   } ] ```
+tainted_arg_normal_function.py#```json [   {     "label": "CWE-78: OS Command Injection",     "line of Code": "os.system(\"mv \" + uploaded_file.temporary_file_path() + \" \" + \"%s/%s\" % (upload_dir_path, title))"   } ] ```
+XSS.py#```json [   {     "label": "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",     "line of Code": "resp = make_response(html.replace('{{ param }}', param))"   } ] ```
+XSS_assign_to_other_var.py#```json [   {     "label": "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",     "line of Code": "resp = make_response(html.replace('{{ param }}', other_var))"   } ] ```
+XSS_call.py#```json [   {     "label": "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",     "line of Code": "resp = make_response(html.replace('{{ param }}', pik))"   } ] ```
+XSS_form.py#```json [   {     "label": "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",     "line of Code": "resp = make_response(html1.replace('{{ data }}', data ))"   } ] ```
+XSS_no_vuln.py#```json [] ```
+XSS_reassign.py#```json [   {     "label": "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",     "line of Code": "resp = make_response(html.replace('{{ param }}', param))"   } ] ```
+XSS_sanitised.py#```json [] ```
+XSS_url.py#```json [   {     "label": "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",     "line of Code": "resp = make_response(html.replace('{{ param }}', param))"   } ] ```
+XSS_variable_assign.py#```json [   {     "label": "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",     "line of Code": "resp = make_response(html.replace('{{ param }}', other_var))"   } ] ```
+XSS_variable_assign_no_vuln.py#```json [] ```
+XSS_variable_multiple_assign.py#```json [   {     "label": "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",     "line of Code": "resp = make_response(html.replace('{{ param }}', another_one))"   } ] ```
+yield.py#```json [   {     "label": "CWE-78: OS Command Injection",     "line of Code": "subprocess.call(script, shell=True)"   },   {     "label": "CWE-918: Improper Neutralization of Special Elements used in an OS Command",     "line of Code": "script = \"; \".join(things_to_run())"   },   {     "label": "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')",     "line of Code": "unknown"   } ] ```
